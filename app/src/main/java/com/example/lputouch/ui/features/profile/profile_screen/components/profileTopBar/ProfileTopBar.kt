@@ -48,7 +48,11 @@ fun ProfileTopBar(navController: NavController, sheetState: SheetState, onShowSh
         title = { Text("Profile", fontFamily = Nunito, fontWeight = FontWeight.Medium, fontSize = 17.sp) },
         navigationIcon = {
             IconButton(
-                onClick = {navController.navigateUp()}
+                onClick = {
+                    if (navController.previousBackStackEntry != null) {
+                        navController.popBackStack()
+                    }
+                }
             ) {
                 Icon(Icons.Default.ArrowBack, contentDescription = null)
             }

@@ -265,10 +265,3 @@ fun MessScreen(navController: NavController, viewModal: AppViewModal) {
 }
 
 
-@OptIn(ExperimentalMaterial3Api::class)
-@Preview(showSystemUi = true)
-@Composable
-fun MyPreview() {
-    MessScreen(navController = rememberNavController(), viewModal = AppViewModal())
-
-}

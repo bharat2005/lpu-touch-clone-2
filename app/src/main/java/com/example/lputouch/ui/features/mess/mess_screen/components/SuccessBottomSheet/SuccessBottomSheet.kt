@@ -78,6 +78,10 @@ import androidx.compose.ui.text.style.TextAlign
 import com.example.lputouch.R
 import com.example.lputouch.data.source.MessDetailList
 import com.example.lputouch.ui.components.MyVideoPlayer
+import com.example.lputouch.ui.theme.BlueChip
+import com.example.lputouch.ui.theme.ElegantPurple
+import com.example.lputouch.ui.theme.FourLeaf
+import com.example.lputouch.ui.theme.Noir
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import kotlin.random.Random
 
@@ -90,6 +94,12 @@ fun SuccessBottomSheet(
     sheetState: SheetState
 ) {
     var scope = rememberCoroutineScope()
+    val color : Color = listOf<Color>(
+//        FourLeaf,
+//        BlueChip,
+//        ElegantPurple
+        Noir
+    ).random()
 
 
     var countDown by remember { mutableStateOf(30) }
@@ -489,7 +499,7 @@ fun SuccessBottomSheet(
                                         .aspectRatio(1f)
                                         .padding(horizontal = 2.dp)
                                         .background(
-                                            Color(0xFF246900)
+                                            color
                                         )
                                         .padding(22.dp),
                                     contentAlignment = Alignment.Center
