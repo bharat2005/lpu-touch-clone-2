@@ -91,16 +91,10 @@ import kotlin.random.Random
 fun SuccessBottomSheet(
     viewModal: AppViewModal,
     showSheet: MutableState<Boolean>,
-    sheetState: SheetState
+    sheetState: SheetState,
+    myStoredColor : Color
 ) {
     var scope = rememberCoroutineScope()
-    val color : Color = listOf<Color>(
-//        FourLeaf,
-//        BlueChip,
-//        ElegantPurple
-        Noir
-    ).random()
-
 
     var countDown by remember { mutableStateOf(30) }
 
@@ -499,7 +493,7 @@ fun SuccessBottomSheet(
                                         .aspectRatio(1f)
                                         .padding(horizontal = 2.dp)
                                         .background(
-                                            color
+                                            myStoredColor
                                         )
                                         .padding(22.dp),
                                     contentAlignment = Alignment.Center

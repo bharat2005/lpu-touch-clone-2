@@ -18,11 +18,13 @@ import androidx.compose.material3.TextField
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.lputouch.data.model.SettingFeild
 import com.example.lputouch.data.source.SettingFieldsData
+import com.example.lputouch.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -32,6 +34,15 @@ fun SettingsScreen(navController: NavController) {
             CenterAlignedTopAppBar(
                 title = { Text("Settings") },
                 navigationIcon = { IconButton(onClick = {navController.navigateUp()}){ Icon(Icons.Default.ArrowBack, contentDescription = null) } },
+                actions = {
+                    IconButton(
+                        onClick = {
+                            navController.navigate("color_screen")
+                        }
+                    ) {
+                       Icon(painterResource(R.drawable.color), contentDescription = null)
+                    }
+                }
             )
         }
     ) {

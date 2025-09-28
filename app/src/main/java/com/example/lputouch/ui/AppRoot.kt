@@ -26,6 +26,7 @@ import com.example.lputouch.AppViewModal
 import com.example.lputouch.ui.features.auth.authGraph
 import com.example.lputouch.ui.features.camera.cameraGraph
 import com.example.lputouch.ui.features.camera.camera_screen.CameraScreen
+import com.example.lputouch.ui.features.colors.colorsNavGraph
 import com.example.lputouch.ui.features.general.generalGraph
 import com.example.lputouch.ui.features.main.mainGraph
 import com.example.lputouch.ui.features.mess.messGraph
@@ -76,6 +77,7 @@ fun AppRoot(viewModal: AppViewModal) {
         residentailGraph(navController)
         notificationGraph(navController)
         messGraph(navController, viewModal)
+        colorsNavGraph(navController)
 
 
         composable("settings") { SettingsScreen(navController) }

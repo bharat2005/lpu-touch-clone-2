@@ -32,7 +32,11 @@ fun MessTopBar(navController: NavController) {
             )
         },
         navigationIcon = {
-            IconButton(onClick = { navController.navigateUp() }) {
+            IconButton(onClick = {
+                if (navController.previousBackStackEntry != null) {
+                    navController.popBackStack()
+                }
+            }) {
                 Icon(Icons.Default.ArrowBack, contentDescription = null)
             }
         },

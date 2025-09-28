@@ -52,10 +52,12 @@ import androidx.navigation.compose.rememberNavController
 import com.example.lputouch.AppViewModal
 import com.example.lputouch.R
 import com.example.lputouch.data.local.getMyDetails
+import com.example.lputouch.data.local.getMyMessColor
 import com.example.lputouch.data.source.MessDetailList
 import com.example.lputouch.ui.components.LoadingOverlay.LoadingOverlay
 import com.example.lputouch.ui.features.mess.mess_screen.components.SuccessBottomSheet.SuccessBottomSheet
 import com.example.lputouch.ui.features.mess.mess_screen.components.messTopBar.MessTopBar
+import com.example.lputouch.ui.theme.FourLeaf
 import com.example.lputouch.ui.theme.Nunito
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -76,6 +78,8 @@ fun MessScreen(navController: NavController, viewModal: AppViewModal) {
     )
 
     var scope = rememberCoroutineScope()
+
+    val myStoredColor = getMyMessColor(context).collectAsState(FourLeaf).value
 
 
     Scaffold(
@@ -255,7 +259,7 @@ fun MessScreen(navController: NavController, viewModal: AppViewModal) {
 
 
 
-    SuccessBottomSheet(viewModal, showSheet, sheetState )
+    SuccessBottomSheet(viewModal, showSheet, sheetState, myStoredColor )
 
 
     LoadingOverlay(isGeneral = false)
