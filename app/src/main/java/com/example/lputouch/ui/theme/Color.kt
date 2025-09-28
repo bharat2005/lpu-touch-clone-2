@@ -30,7 +30,8 @@ val Noir = Color(0xFF241204)  // 27-Sep-Saturday 08:14 PM Dinner
 //    28-Sep-Sunday
 val Vienna = Color(0xFF360024) // 28-Sep-Sunday 09:22 AM BreakFast
 val Purple = Color(0xFF6a3492) // 28-Sep-Sunday 01:06 PM Lunch
-////////////////////////////////////////////////////////////////////////
+
+val Pool = Color(0xFF009280)  // 28-Sep-Sunday 08:10 PM Dinner
 
 
 //    29-Sep-Monday
