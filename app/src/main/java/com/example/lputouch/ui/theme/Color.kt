@@ -37,7 +37,8 @@ val Pool = Color(0xFF009280)  // 28-Sep-Sunday 08:10 PM Dinner
 //    29-Sep-Monday
 val Forestial = Color(0xFF385713) // 29-Sep-Monday 08:31 AM BreakFast
 val Wineary = Color(0xFF932435) // 29-Sep-Monday 01:20 PM Lunch
-////////////////////////////////////////////////////////////////////////
+
+val Serenade = Color(0xFF366747)  // 29-Sep-Monday 08:14 PM Dinner
 
 
 //    30-Sep-Tuesday
