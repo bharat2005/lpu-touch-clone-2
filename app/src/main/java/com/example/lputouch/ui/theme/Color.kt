@@ -44,7 +44,7 @@ val Serenade = Color(0xFF366747)  // 29-Sep-Monday 08:14 PM Dinner
 //    30-Sep-Tuesday
 val Alligator = Color(0xFF806713) // 30-Sep-Tuesday 08:22 AM BreakFast
 val Gentian = Color(0xFF362494) // 30-Sep-Tuesday 01:17 PM Lunch
-////////////////////////////////////////////////////////////////////////
+val Coffee = Color(0xFF805504)  // 30-Sep-Tuesday 08:01 PM Dinner
 
 
 //    01-Oct-Wednesday
