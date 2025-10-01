@@ -50,7 +50,7 @@ val Coffee = Color(0xFF805504)  // 30-Sep-Tuesday 08:01 PM Dinner
 //    01-Oct-Wednesday
 ////////////////////////////////////////////////////////////////////////
 val MayGreen = Color(0xFF569248) // 01-Oct-Wednesday 01:13 PM Lunch
-////////////////////////////////////////////////////////////////////////
+val PinkHorror = Color(0xFF943668)  // 01-Oct-Wednesday 08:08 PM Dinner
 
 
 //    02-Oct-Thursday
