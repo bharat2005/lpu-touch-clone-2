@@ -5,6 +5,7 @@ import com.example.lputouch.ui.theme.Alligator
 import com.example.lputouch.ui.theme.BlueChip
 import com.example.lputouch.ui.theme.Coffee
 import com.example.lputouch.ui.theme.ElegantPurple
+import com.example.lputouch.ui.theme.Emperor
 import com.example.lputouch.ui.theme.Forestial
 import com.example.lputouch.ui.theme.FourLeaf
 import com.example.lputouch.ui.theme.Gentian
@@ -14,6 +15,7 @@ import com.example.lputouch.ui.theme.PinkHorror
 import com.example.lputouch.ui.theme.Pool
 import com.example.lputouch.ui.theme.Purple
 import com.example.lputouch.ui.theme.Serenade
+import com.example.lputouch.ui.theme.Shin
 import com.example.lputouch.ui.theme.Vienna
 import com.example.lputouch.ui.theme.Wineary
 
@@ -33,5 +35,7 @@ val myColorsList : List<MyColor> = listOf(
     MyColor(Coffee, "Coffee"),
     MyColor(MayGreen, "MayGreen"),
     MyColor(PinkHorror, "PinkHorror"),
+    MyColor(Emperor, "Emperor"),
+    MyColor(Shin, "Shin"),
 
 )
