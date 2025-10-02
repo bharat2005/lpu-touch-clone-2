@@ -56,7 +56,7 @@ val PinkHorror = Color(0xFF943668)  // 01-Oct-Wednesday 08:08 PM Dinner
 //    02-Oct-Thursday
 val Emperor = Color(0xFF137e6a) // 02-Oct-Thursday 09:31 AM BreakFast
 val Shin = Color(0xFF933648) // 02-Oct-Thursday 01:18 PM Lunch
-////////////////////////////////////////////////////////////////////////
+val Viridian = Color(0xFF239268)  // 02-Oct-Thursday 08:07 PM Dinner
 
 
 

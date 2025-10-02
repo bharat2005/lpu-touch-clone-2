@@ -17,6 +17,7 @@ import com.example.lputouch.ui.theme.Purple
 import com.example.lputouch.ui.theme.Serenade
 import com.example.lputouch.ui.theme.Shin
 import com.example.lputouch.ui.theme.Vienna
+import com.example.lputouch.ui.theme.Viridian
 import com.example.lputouch.ui.theme.Wineary
 
 val myColorsList : List<MyColor> = listOf(
@@ -37,5 +38,6 @@ val myColorsList : List<MyColor> = listOf(
     MyColor(PinkHorror, "PinkHorror"),
     MyColor(Emperor, "Emperor"),
     MyColor(Shin, "Shin"),
+    MyColor(Viridian, "Viridian"),
 
 )
