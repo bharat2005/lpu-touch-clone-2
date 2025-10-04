@@ -68,8 +68,8 @@ val RoyalNight = Color(0xFF253692)  // 03-Oct-Friday 08:05 PM Dinner
 
 //    04-Oct-Saturday
 val Dark = Color(0xFF142539) // 04-Oct-Saturday 09:14 AM BreakFast
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
+val Roast = Color(0xFF352412) // 04-Oct-Saturday 01:14 PM Lunch
+val Temple = Color(0xFF246811)  // 04-Oct-Saturday 08:02 PM Dinner
 
 
 //    05-Oct-Sunday
