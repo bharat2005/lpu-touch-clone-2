@@ -76,7 +76,7 @@ object ProfileDetailsList {
                     ),
                     ProfileDots(
                         name = "Warden",
-                        value = "22332::Subhash Chand (9888598705)"
+                        value = "20791::Kulwant Sharma (7986087616)"
                     ),
                 )),
         )

@@ -22,6 +22,7 @@ import com.example.lputouch.ui.theme.RoyalNight
 import com.example.lputouch.ui.theme.Serenade
 import com.example.lputouch.ui.theme.Shin
 import com.example.lputouch.ui.theme.SpaceDust
+import com.example.lputouch.ui.theme.Succubus
 import com.example.lputouch.ui.theme.Temple
 import com.example.lputouch.ui.theme.TropicalForest
 import com.example.lputouch.ui.theme.Vienna
@@ -57,6 +58,5 @@ val myColorsList : List<MyColor> = listOf(
     MyColor(TropicalForest, "TropicalForest"),
     MyColor(Melancholia, "Melancholia"),
     MyColor(SpaceDust, "SpaceDust"),
-
-
+    MyColor(Succubus, "Succubus"),
 )
