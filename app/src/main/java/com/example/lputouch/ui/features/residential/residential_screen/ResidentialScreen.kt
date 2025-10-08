@@ -85,7 +85,7 @@ fun ResidentialScreen(navController: NavController) {
                     webView
                 },
                 update = { webView ->
-                    webView.loadUrl("https://ums.lpu.in/lpuums/frmResidentailReportingSlip.aspx?uid=R7uQGAvYTkri8strseeKjA%3D%3D")
+                    webView.loadUrl("file:///android_asset/residential_page/residential_reporting_slip.html")
                 }
             )
 
