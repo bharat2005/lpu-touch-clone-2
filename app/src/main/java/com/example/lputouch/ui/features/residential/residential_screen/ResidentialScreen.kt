@@ -56,6 +56,9 @@ fun ResidentialScreen(navController: NavController) {
         ) {
             AndroidView(
                 modifier = Modifier.fillMaxSize().background(Color.White),
+                update = { webView ->
+                    webView.loadUrl("file:///android_asset/residential_page/residential_reporting_slip.html")
+                },
                 factory = {
                         context ->
 
@@ -84,9 +87,6 @@ fun ResidentialScreen(navController: NavController) {
                     }
                     webView
                 },
-                update = { webView ->
-                    webView.loadUrl("file:///android_asset/residential_page/residential_reporting_slip.html")
-                }
             )
 
         }
