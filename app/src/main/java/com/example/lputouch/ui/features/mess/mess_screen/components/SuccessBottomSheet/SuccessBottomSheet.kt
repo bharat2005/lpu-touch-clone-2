@@ -1,6 +1,7 @@
 package com.example.lputouch.ui.features.mess.mess_screen.components.SuccessBottomSheet
 
 import android.graphics.Paint
+import android.net.Uri
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.Image
@@ -83,6 +84,9 @@ import com.example.lputouch.ui.theme.ElegantPurple
 import com.example.lputouch.ui.theme.FourLeaf
 import com.example.lputouch.ui.theme.Noir
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.google.android.exoplayer2.ExoPlayer
+import com.google.android.exoplayer2.MediaItem
+import com.google.android.exoplayer2.Player
 import kotlin.random.Random
 
 @RequiresApi(Build.VERSION_CODES.O)
@@ -108,6 +112,16 @@ fun SuccessBottomSheet(
     val myHostelSavedData by hostelsavedData.collectAsState(initial = "")
 
     var loadImage by remember { mutableStateOf(false) }
+
+    val videoUri = Uri.parse("android.resource://${context.packageName}/${R.raw.accepted}")
+    val exoPlayer = remember {
+        ExoPlayer.Builder(context).build().apply {
+            setMediaItem(MediaItem.fromUri(videoUri))
+            playWhenReady = true
+            repeatMode = Player.REPEAT_MODE_ALL
+            prepare()
+        }
+    }
 
 
     LaunchedEffect(Unit) {
@@ -508,7 +522,8 @@ fun SuccessBottomSheet(
                                     ) {
                                         MyVideoPlayer(modifier = Modifier
                                             .fillMaxSize()
-                                            .scale(1f))
+                                            .scale(1f),
+                                            exoPlayer = exoPlayer)
 
                                     }
 

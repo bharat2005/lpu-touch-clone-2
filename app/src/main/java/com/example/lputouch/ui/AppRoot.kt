@@ -1,5 +1,7 @@
 package com.example.lputouch.ui
 
+import androidx.compose.animation.EnterTransition
+import androidx.compose.animation.ExitTransition
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -84,12 +86,8 @@ fun AppRoot(viewModal: AppViewModal) {
 
         composable(
             route = "camera_screen/{food}",
-            enterTransition = {
-                slideInHorizontally(
-                    initialOffsetX = { fullWidth -> fullWidth },
-                    animationSpec = tween(200)
-                )
-            },
+            enterTransition = { EnterTransition.None},
+            popExitTransition = { ExitTransition.None}
         ) {
                 backStackEntry ->
             val food = backStackEntry.arguments?.getString("food") ?: "food"

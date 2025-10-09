@@ -19,20 +19,13 @@ import com.google.android.exoplayer2.ui.AspectRatioFrameLayout
 import com.google.android.exoplayer2.ui.PlayerView
 
 @Composable
-fun MyVideoPlayer(modifier: Modifier = Modifier) {
+fun MyVideoPlayer(modifier: Modifier = Modifier, exoPlayer : ExoPlayer) {
     val context = LocalContext.current
     val lifeCycleOwner = LocalLifecycleOwner.current
 
-    val videoUri = Uri.parse("android.resource://${context.packageName}/${R.raw.accepted}")
 
-    val exoPlayer = remember {
-        ExoPlayer.Builder(context).build().apply {
-            setMediaItem(MediaItem.fromUri(videoUri))
-            playWhenReady = true
-            repeatMode = Player.REPEAT_MODE_ALL
-            prepare()
-        }
-    }
+
+
 
         DisposableEffect(lifeCycleOwner) {
             val observer = LifecycleEventObserver {_, event ->
