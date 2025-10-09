@@ -14,6 +14,7 @@ import com.example.lputouch.ui.theme.Gentian
 import com.example.lputouch.ui.theme.InfiniteNight
 import com.example.lputouch.ui.theme.MayGreen
 import com.example.lputouch.ui.theme.Melancholia
+import com.example.lputouch.ui.theme.Mulberry
 import com.example.lputouch.ui.theme.Noir
 import com.example.lputouch.ui.theme.PinkHorror
 import com.example.lputouch.ui.theme.Pool
@@ -65,5 +66,6 @@ val myColorsList : List<MyColor> = listOf(
     MyColor(Succubus, "Succubus"),
     MyColor(WineGrape, "WineGrape"),
     MyColor(InfiniteNight, "InfiniteNight"),
+    MyColor(Mulberry, "Mulberry"),
 
 )
