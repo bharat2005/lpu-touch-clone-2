@@ -85,9 +85,7 @@ fun AppRoot(viewModal: AppViewModal) {
         composable("settings") { SettingsScreen(navController) }
 
         composable(
-            route = "camera_screen/{food}",
-            enterTransition = { EnterTransition.None},
-            popExitTransition = { ExitTransition.None}
+            route = "camera_screen/{food}", enterTransition = { EnterTransition.None}, popExitTransition = { ExitTransition.None}
         ) {
                 backStackEntry ->
             val food = backStackEntry.arguments?.getString("food") ?: "food"
