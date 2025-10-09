@@ -98,7 +98,7 @@ val InfiniteNight = Color(0xFF001236) // 08-Oct-Wednesday 01:20 PM Lunch
 //    09-Oct-Thursday
 val Mulberry = Color(0xFF930047) // 09-Oct-Thursday 08:28 AM BreakFast
 val Pine = Color(0xFF687f37) // 09-Oct-Thursday 01:11 PM Lunch
-////////////////////////////////////////////////////////////////////////
+val Olive = Color(0xFF818105)  // 09-Oct-Thursday 08:15 PM Dinner
 
 
 //    10-Oct-Friday
