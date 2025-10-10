@@ -104,7 +104,7 @@ val Olive = Color(0xFF818105)  // 09-Oct-Thursday 08:15 PM Dinner
 //    10-Oct-Friday
 val Escapade = Color(0xFF385713) // 10-Oct-Friday 09:07 AM BreakFast
 val Caponata = Color(0xFF822504) // 10-Oct-Friday 01:25 PM Lunch
-////////////////////////////////////////////////////////////////////////
+val Chocolate = Color(0xFF914837)  // 10-Oct-Friday 08:11 PM Dinner
 
 
 //    11-Oct-Saturday
