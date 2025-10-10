@@ -4,6 +4,7 @@ import com.example.lputouch.data.model.MyColor
 import com.example.lputouch.ui.theme.Alligator
 import com.example.lputouch.ui.theme.Annatto
 import com.example.lputouch.ui.theme.BlueChip
+import com.example.lputouch.ui.theme.Caponata
 import com.example.lputouch.ui.theme.Coffee
 import com.example.lputouch.ui.theme.Dark
 import com.example.lputouch.ui.theme.ElegantPurple
@@ -73,4 +74,5 @@ val myColorsList : List<MyColor> = listOf(
     MyColor(Pine, "Pine"),
     MyColor(Olive, "Olive"),
     MyColor(Escapade, "Escapade"),
+    MyColor(Caponata, "Caponata"),
 )
